@@ -8,7 +8,7 @@ class Cart(object):
 
 	def __init__(self, request):
 		""" Initialize the cart"""
-		self.session = request.sesison
+		self.session = request.session
 		cart = self.session.get(settings.CART_SESSION_ID)
 		if not cart:
 			# save an empty cart in the session
@@ -43,10 +43,10 @@ class Cart(object):
 		"""
 		product_ids = self.cart.keys()
 		# get the product objects and add them to the cart
-		products = Product.objects.filter(id_in=product_ids)
+		products = Product.objects.filter(id__in=product_ids)
 		cart = self.cart.copy()
 		for product in products:
-			cart[str[product.id]]['product'] = product
+			cart[str(product.id)]['product'] = product
 
 		for item in cart.values():
 			item['price'] = Decimal(item['price'])
