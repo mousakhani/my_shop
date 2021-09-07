@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
 	# added apps
 	'celery',
+	'flower',
 
 	# local apps
 	'shop',
@@ -136,3 +137,7 @@ MEDIA_ROOT = 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CART_SESSION_ID = 'cart'
+
+EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
+
+CELERY_BROKER_URL = 'amqp://localhost'
