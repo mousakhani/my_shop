@@ -145,5 +145,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # redis settings
 REDIS_HOST = 'localhost'
-REDIS_POST = 6379
+REDIS_PORT = '6379'
 REDIS_DB = 1
