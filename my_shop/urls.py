@@ -18,8 +18,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-
-#توجه شود. در ادرسی دهی، url ها باید از جزء ها به کل ها مرتب شوند.
+# توجه شود. در ادرسی دهی، url ها باید از جزء ها به کل ها مرتب شوند.
 # مثلا در کد زیر اگر خط مربوط به اپ shop را بالاتر از خطوط مربوط به اپ های cart و orders
 # قرار دهیم، هیچ گاه cart و orders مسیریابی نخواهند شد. چون قبل از اینکه نوبت به آنها برسد
 # در اپ shop یا مسیر پیدا شده و یا اگر پیدا نشده مقدار 404 برگشت داده می شود.
@@ -28,6 +27,7 @@ urlpatterns = [
 	path('admin/', admin.site.urls),
 	path('orders/', include('orders.urls')),
 	path('cart/', include('cart.urls')),
+	path('coupon/', include('coupon.urls')),
 	path('', include('shop.urls')),
 ]
 
