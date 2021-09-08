@@ -10,6 +10,6 @@ def order_created(order_id):
 	"""
 	order = Order.objects.get(id=order_id)
 	subject = f'Order {order.id}'
-	message = f'Dear {order.first_name}, \n\n You have successfullt placed an order.\n\n Your order id is: {order.id}'
+	message = f'Dear {order.first_name}, \n\n You have successfully placed an order.\n\n Your order id is: {order.id}'
 	mail_sent = send_mail(subject, message, 'admin@myshop.com', ['khodemousa@gmail.com', ])
 	return mail_sent
