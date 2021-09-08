@@ -4,5 +4,5 @@ from coupon import views
 
 app_name = 'coupon'
 urlpatterns = [
-	path('apply/', views.coupon_apply, name='coupon_apply'),
+	path('apply/', views.coupon_apply, name='apply'),
 ]
