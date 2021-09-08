@@ -24,6 +24,8 @@ class Recommender(object):
 					r.zincrby(self.get_product_key(product_id), 1, with_id)
 
 	def suggest_product_for(self, products, max_result=6):
+		if len(products)<1:
+			return None
 		product_ids = [p.id for p in products]
 		if len(products) == 1:
 			# only 1 product
@@ -35,7 +37,7 @@ class Recommender(object):
 			suggestions = r.zrange(self.get_product_key(product_ids[0]), 0, -1, desc=True)[:max_result]
 		else:
 			# generate a temporary key
-			flat_ids = ''.join([str[id] for id in product_ids])
+			flat_ids = ''.join([str(id) for id in product_ids])
 			tmp_key = f'tmp_{flat_ids}'
 			# multiple products, combine scores of all products
 			# store the resulting sorted set in a temporary key
