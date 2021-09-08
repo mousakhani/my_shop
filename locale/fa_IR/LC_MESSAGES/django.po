@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-08 21:10+0430\n"
+"POT-Creation-Date: 2021-09-08 21:24+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+#: .\cart\forms.py:7
+msgid "quantity"
+msgstr "تعداد"
+
+#: .\coupon\forms.py:6 .\coupon\models.py:11
+msgid "code"
+msgstr "کد"
+
+#: .\coupon\models.py:12
+msgid "valid_from"
+msgstr "از تاریخ"
+
+#: .\coupon\models.py:13
+msgid "valid_to"
+msgstr "تا تاریخ"
+
+#: .\coupon\models.py:14
+msgid "discount"
+msgstr "درصد"
+
+#: .\coupon\models.py:15
+msgid "active"
+msgstr "مجاز"
+
+#: .\coupon\models.py:26
+msgid "Coupon"
+msgstr "تخفیف"
+
+#: .\coupon\models.py:27
+msgid "Coupons"
+msgstr "تخفیفات"
+
 #: .\dev\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
-msgstr ""
+msgstr "پیام ها"
 
 #: .\dev\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
