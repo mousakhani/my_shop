@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-08 21:24+0430\n"
+"POT-Creation-Date: 2021-09-08 21:37+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -444,6 +444,7 @@ msgid "File"
 msgstr ""
 
 #: .\dev\Lib\site-packages\django\db\models\fields\files.py:375
+#: .\templates\cart\detail.html:12
 msgid "Image"
 msgstr ""
 
@@ -1372,3 +1373,95 @@ msgstr "انگلیسی"
 #: .\my_shop\settings.py:118
 msgid "Farsi"
 msgstr "فارسی"
+
+#: .\templates\cart\detail.html:4 .\templates\cart\detail.html:7
+msgid "Your shoping cart"
+msgstr "سبد خرید شما"
+
+#: .\templates\cart\detail.html:8
+msgid "Remove"
+msgstr "حذف"
+
+#: .\templates\cart\detail.html:13
+msgid "Product"
+msgstr "محصول"
+
+#: .\templates\cart\detail.html:14
+#, fuzzy
+#| msgid "quantity"
+msgid "Quantity"
+msgstr "تعداد"
+
+#: .\templates\cart\detail.html:16
+msgid "Unit price"
+msgstr "فی"
+
+#: .\templates\cart\detail.html:17
+msgid "Price"
+msgstr "قیمت"
+
+#: .\templates\cart\detail.html:61
+msgid "Total:"
+msgstr "تعداد کل:"
+
+#: .\templates\cart\detail.html:65
+msgid "Subtotal:"
+msgstr "تعداد:"
+
+
+#: .\templates\cart\detail.html:86
+msgid "People who bought this also bought "
+msgstr "افراد دیگر این محصولات را نیز خریدند"
+
+#: .\templates\cart\detail.html:97
+msgid "Apply a coupon:"
+msgstr "افزودن کد تخفیف"
+
+#: .\templates\cart\detail.html:104
+msgid "Continue Shopping"
+msgstr "خرید دیگر"
+
+#: .\templates\cart\detail.html:105 .\templates\orders\order\create.html:4
+#: .\templates\orders\order\create.html:7
+msgid "Checkout"
+msgstr "ثبت نهایی"
+
+#: .\templates\orders\order\create.html:18
+#: .\templates\orders\order\create.html:21
+msgid "Total price:"
+msgstr "قیمت کل:"
+
+#: .\templates\orders\order\create.html:19
+msgid "Subtotal price:"
+msgstr "قیمت:"
+
+#: .\templates\orders\order\created.html:4
+#: .\templates\orders\order\created.html:9
+msgid "Thank you"
+msgstr "متشکرم"
+
+#: .\templates\orders\order\created.html:10
+#, python-format
+msgid ""
+"Your order has been successfully completed. Your order number is <strong>"
+"%(order.id)s</strong>\n"
+"    "
+msgstr "خرید شما با شماره پیگیری <strong>"
+"%(order.id)s</strong> با موفقیت انجام شد"
+
+#: .\templates\shop\products\detail.html:19
+msgid "Add to cart"
+msgstr "افزودن به کارت"
+
+#: .\templates\shop\products\detail.html:24
+msgid "People who bought this also bought"
+msgstr "افراد دیگر این محصولات را نیز خریدند"
+
+
+#: .\templates\shop\products\list.html:8
+msgid "Products"
+msgstr "محصولات"
+
+#: .\templates\shop\products\list.html:14
+msgid "Categories"
+msgstr "دسته بندی ها"

@@ -1,9 +1,10 @@
 {% extends '_base.html' %}
+{% load i18n %}
 {% block title %}
-    Checkout
+    {% trans 'Checkout' %}
 {% endblock %}
 {% block content %}
-    <h1>Checkout</h1>
+    <h1>{% trans 'Checkout' %}</h1>
     <div class="order-info">
         <ul>
             {% for  item in cart %}
@@ -14,10 +15,10 @@
             {% endfor %}
         </ul>
         {% if cart.coupon %}
-            <p style="text-decoration-line: line-through; color: red"> Total price: ${{ cart.get_total_price|floatformat:2 }}</p>
-            <p style="color: green"> Subtotal price: ${{ cart.get_total_price_after_discount|floatformat:2 }}</p>
-            {% else %}
-            <p style="color: green"> Total price: ${{ cart.get_total_price|floatformat:2 }}</p>
+            <p style="text-decoration-line: line-through; color: red"> {% trans 'Total price:' %} ${{ cart.get_total_price|floatformat:2 }}</p>
+            <p style="color: green"> {% trans 'Subtotal price:' %} ${{ cart.get_total_price_after_discount|floatformat:2 }}</p>
+        {% else %}
+            <p style="color: green"> {% trans 'Total price:' %} ${{ cart.get_total_price|floatformat:2 }}</p>
 
         {% endif %}
     </div>

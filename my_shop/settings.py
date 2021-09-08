@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
 	# added apps
 	'celery',
-	'flower',
+	'flower',  # for monitoring celery
+	'rosetta',  # Make translations easy to edit by django administration site
 
 	# local apps
 	'shop',
