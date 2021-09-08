@@ -141,3 +141,9 @@ CART_SESSION_ID = 'cart'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # CELERY_BROKER_URL = 'amqp://localhost'
+
+
+# redis settings
+REDIS_HOST = 'localhost'
+REDIS_POST = 6379
+REDIS_DB = 1
