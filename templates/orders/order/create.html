@@ -13,7 +13,13 @@
                 </li>
             {% endfor %}
         </ul>
-        <p> Total price: {{ cart.get_total_price }}</p>
+        {% if cart.coupon %}
+            <p style="text-decoration-line: line-through; color: red"> Total price: ${{ cart.get_total_price|floatformat:2 }}</p>
+            <p style="color: green"> Subtotal price: ${{ cart.get_total_price_after_discount|floatformat:2 }}</p>
+            {% else %}
+            <p style="color: green"> Total price: ${{ cart.get_total_price|floatformat:2 }}</p>
+
+        {% endif %}
     </div>
     <form method="post" class="order-form">
         {{ form.as_p }}
