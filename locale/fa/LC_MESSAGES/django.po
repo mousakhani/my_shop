@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-08 21:37+0430\n"
+"POT-Creation-Date: 2021-09-08 23:23+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,37 +16,37 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=(n > 1);\n"
 
 #: .\cart\forms.py:7
 msgid "quantity"
 msgstr "تعداد"
 
-#: .\coupon\forms.py:6 .\coupon\models.py:11
+#: .\coupon\forms.py:6 .\coupon\models.py:8
 msgid "code"
 msgstr "کد"
 
-#: .\coupon\models.py:12
+#: .\coupon\models.py:9
 msgid "valid_from"
 msgstr "از تاریخ"
 
-#: .\coupon\models.py:13
+#: .\coupon\models.py:10
 msgid "valid_to"
 msgstr "تا تاریخ"
 
-#: .\coupon\models.py:14
+#: .\coupon\models.py:11
 msgid "discount"
 msgstr "درصد"
 
-#: .\coupon\models.py:15
+#: .\coupon\models.py:12
 msgid "active"
 msgstr "مجاز"
 
-#: .\coupon\models.py:26
+#: .\coupon\models.py:23
 msgid "Coupon"
 msgstr "تخفیف"
 
-#: .\coupon\models.py:27
+#: .\coupon\models.py:24
 msgid "Coupons"
 msgstr "تخفیفات"
 
@@ -1366,14 +1366,6 @@ msgctxt "stick"
 msgid "club"
 msgstr ""
 
-#: .\my_shop\settings.py:117
-msgid "English"
-msgstr "انگلیسی"
-
-#: .\my_shop\settings.py:118
-msgid "Farsi"
-msgstr "فارسی"
-
 #: .\templates\cart\detail.html:4 .\templates\cart\detail.html:7
 msgid "Your shoping cart"
 msgstr "سبد خرید شما"
@@ -1408,6 +1400,14 @@ msgstr "تعداد کل:"
 msgid "Subtotal:"
 msgstr "تعداد:"
 
+#: .\templates\cart\detail.html:71
+#, python-format
+msgid ""
+"\n"
+"                        %(cart.coupon.code)s coupon\n"
+"                        (%(cart.coupon.discount)s%% off)\n"
+"                    "
+msgstr ""
 
 #: .\templates\cart\detail.html:86
 msgid "People who bought this also bought "
@@ -1446,8 +1446,8 @@ msgid ""
 "Your order has been successfully completed. Your order number is <strong>"
 "%(order.id)s</strong>\n"
 "    "
-msgstr "خرید شما با شماره پیگیری <strong>"
-"%(order.id)s</strong> با موفقیت انجام شد"
+msgstr ""
+"خرید شما با شماره پیگیری <strong>%(order.id)s</strong> با موفقیت انجام شد"
 
 #: .\templates\shop\products\detail.html:19
 msgid "Add to cart"
@@ -1457,7 +1457,6 @@ msgstr "افزودن به کارت"
 msgid "People who bought this also bought"
 msgstr "افراد دیگر این محصولات را نیز خریدند"
 
-
 #: .\templates\shop\products\list.html:8
 msgid "Products"
 msgstr "محصولات"
@@ -1465,3 +1464,9 @@ msgstr "محصولات"
 #: .\templates\shop\products\list.html:14
 msgid "Categories"
 msgstr "دسته بندی ها"
+
+#~ msgid "English"
+#~ msgstr "انگلیسی"
+
+#~ msgid "Farsi"
+#~ msgstr "فارسی"
