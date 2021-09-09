@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-08 23:23+0430\n"
+"POT-Creation-Date: 2021-09-09 06:50+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1366,6 +1366,32 @@ msgctxt "stick"
 msgid "club"
 msgstr ""
 
+#: .\my_shop\settings.py:118
+msgid "English"
+msgstr "انگلیسی"
+
+#: .\my_shop\settings.py:119
+msgid "Farsi"
+msgstr "فارسی"
+
+#: .\templates\_base.html:8 .\templates\_base.html:12
+msgid "My Shop"
+msgstr ""
+
+#: .\templates\_base.html:18
+#, fuzzy
+#| msgid "Your shoping cart"
+msgid "Your cart:"
+msgstr "سبد خرید شما"
+
+#: .\templates\_base.html:20
+msgid "item"
+msgstr "جنس"
+
+#: .\templates\_base.html:23
+msgid "Your cart is empty"
+msgstr "سبد خرید شما خالی است"
+
 #: .\templates\cart\detail.html:4 .\templates\cart\detail.html:7
 msgid "Your shoping cart"
 msgstr "سبد خرید شما"
@@ -1464,9 +1490,3 @@ msgstr "محصولات"
 #: .\templates\shop\products\list.html:14
 msgid "Categories"
 msgstr "دسته بندی ها"
-
-#~ msgid "English"
-#~ msgstr "انگلیسی"
-
-#~ msgid "Farsi"
-#~ msgstr "فارسی"
