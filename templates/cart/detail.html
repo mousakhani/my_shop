@@ -1,10 +1,10 @@
 {% extends '_base.html' %}
 {% load i18n %}
 {% load static %}
-{% block title %}{% trans 'Your shoping cart' %}{% endblock %}
+{% block title %}{% trans 'Your shopping cart' %}{% endblock %}
 
 {% block content %}
-    <h1>{% trans 'Your shoping cart' %}</h1>
+    <h1>{% trans 'Your shopping cart' as cart_ %} {{ cart_ }}</h1>
     {% trans 'Remove' as Remove %}
     <table class="cart">
         <thead>
