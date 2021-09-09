@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 	'celery',
 	'flower',  # for monitoring celery
 	'rosetta',  # Make translations easy to edit by django administration site
-
+	'parler',
 	# local apps
 	'shop',
 	'cart',
@@ -158,3 +158,14 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 REDIS_HOST = 'localhost'
 REDIS_PORT = '6379'
 REDIS_DB = 1
+
+PARLER_LANGUAGES = {
+	None: (
+		{'code': 'en'},
+		{'code': 'fa'}
+	),
+	'default': {
+		'fallback': 'en',
+		'hide_untranslated': False
+	}
+}
