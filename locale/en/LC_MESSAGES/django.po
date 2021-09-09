@@ -1372,7 +1372,7 @@ msgstr ""
 
 #: .\my_shop\settings.py:119
 msgid "Farsi"
-msgstr ""
+msgstr "فارسی"
 
 #: .\templates\cart\detail.html:4 .\templates\cart\detail.html:7
 msgid "Your shoping cart"
