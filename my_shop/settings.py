@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 	# added apps
 	'celery',
 	'flower',  # for monitoring celery
-	# 'rosetta',  # Make translations easy to edit by django administration site
+	'rosetta',  # Make translations easy to edit by django administration site
 
 	# local apps
 	'shop',
@@ -113,19 +113,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'fa'
-# LANGUAGES = (
-# 	('en-us', _('English')),
-# 	('fa', _('Farsi'))
-# )
-#
-# LANGUAGE_PATHS = (
-# 	'locale',
-# )
+LANGUAGE_CODE = 'en'
+LANGUAGES = (
+	('en-us', _('English')),
+	('fa', _('Farsi'))
+)
+
+LANGUAGE_PATHS = (
+	'locale',
+)
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = False
+USE_I18N = True
 
 USE_L10N = True
 
